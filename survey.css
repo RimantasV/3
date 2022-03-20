@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(
+      135deg,
+      rgba(2, 0, 36, 0.9),
+      rgba(114, 114, 168, 0.9)
+    ),
+    url(./survey_bg.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  padding: 20px;
+  font-size: 24px;
+}
+
+form {
+  background-color: rgba(2, 0, 36, 0.6);
+  padding: 30px 50px;
+  margin: 50px auto;
+  max-width: 960px;
+}
+
+.form__question {
+  margin-bottom: 2rem;
+}
+
+label {
+  color: aliceblue;
+  display: block;
+  margin-bottom: 10px;
+}
+
+input,
+select {
+  padding: 10px;
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+}
+
+input:not(:focus):invalid {
+  border: 3px solid rgb(219, 110, 128);
+}

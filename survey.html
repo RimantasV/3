@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="survey.css" />
+    <title>Survey</title>
+  </head>
+  <body>
+    <form action="#" method="get">
+      <div class="form__question">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter name" />
+      </div>
+      <div class="form__question">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter email" />
+      </div>
+      <div class="form__question">
+        <label for="email">Age (optional)</label>
+        <input
+          min="10"
+          max="99"
+          type="number"
+          id="age"
+          name="age"
+          placeholder="Enter age"
+        />
+      </div>
+      <div class="form__question">
+        <label for="cars">Choose a car:</label>
+
+        <select name="cars" id="cars">
+          <option value="" disabled selected>Select your option</option>
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
+      </div>
+    </form>
+  </body>
+</html>
