@@ -11,7 +11,13 @@
     <form action="#" method="get">
       <div class="form__question">
         <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter name" />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter name"
+          required
+        />
       </div>
       <div class="form__question">
         <label for="email">Email</label>
@@ -30,7 +36,6 @@
       </div>
       <div class="form__question">
         <label for="cars">Choose a car:</label>
-
         <select name="cars" id="cars">
           <option value="" disabled selected>Select your option</option>
           <option value="volvo">Volvo</option>
@@ -39,6 +44,7 @@
           <option value="audi">Audi</option>
         </select>
       </div>
+      <input type="submit" />
     </form>
   </body>
 </html>
