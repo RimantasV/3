@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 * {
   box-sizing: border-box;
@@ -18,7 +18,7 @@ body {
   height: 100vh;
   background-position: center;
   padding: 20px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 24px;
 }
 
@@ -26,7 +26,7 @@ form {
   background-color: rgba(2, 0, 36, 0.6);
   padding: 30px 50px;
   margin: 50px auto;
-  max-width: 960px;
+  max-width: 700px;
 }
 
 .form__question {
@@ -50,4 +50,23 @@ select {
 
 input:not(:focus):not(:placeholder-shown):invalid {
   border: 3px solid rgb(219, 110, 128);
+}
+
+.radio__question input,
+.checkbox__question input {
+  display: inline;
+  width: initial;
+}
+
+.label-radio {
+  font-size: 16px;
+  display: inline;
+}
+
+input[type='radio' i] {
+  background-color: red;
+}
+
+p {
+  color: white;
 }
